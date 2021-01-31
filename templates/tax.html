@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+    <h1 style="color:red"><center>Tax</center></h1>
+    <img src="static/images/tax.jpg" alt="image">
+
+    <form style="text-align: center; margin-top: 2%;" action='/add_tax_button' method="POST">
+        <div style="padding: 10px 0;">
+            <input style="background-color: #d3d1d1; padding: 10px 20px;" type="text" name="tid" placeholder="tid">
+        </div>
+        <div style="padding: 10px 0;">
+            <input style="background-color: #d3d1d1; padding: 10px 20px;" type="text" name="fid" placeholder="fid">
+        </div>
+        <div style="padding: 10px 0;">
+            <input style="background-color: #d3d1d1; padding: 10px 20px;" type="text" name="amt" placeholder="amt">
+        </div>
+
+        <button style="margin-top: 30px;" type="submit" value="Submit">Submit</button>
+    </form>
+
+{% endblock %}

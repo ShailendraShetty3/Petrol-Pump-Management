@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1 style="text-align: center;color: gold; margin-top: 107px;">Tax Details</h1>
+    <div style="text-align: center; margin: 170px;" >
+        <table width="100%" style="border: 1px solid black; text-align: center;border-collapse: collapse;">
+            <tr style="border: 1px solid black;">
+                <th width="(100/3)%" style="border: 1px solid black;">tid</th>
+                <th width="(100/3)%" style="border: 1px solid black;">fid</th>
+                <th width="(100/3)%" style="border: 1px solid black;">tax</th>
+            </tr>
+            {% for order in orders %}
+                    <tr width="100%" style="border: 1px solid black;">
+                        <td width="(100/3)%" style="border: 1px solid black;">{{order[0]}}</td>
+                        <td width="(100/3)%" style="border: 1px solid black;">{{order[1]}}</td>
+                        <td width="(100/3)%" style="border: 1px solid black;">{{order[2]}}</td>
+                        <td style="border: 1px solid black;"></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </br>
+        <h3 style="text-align: center;color: red; margin-top: 107px;">Delete tax Record</h3>
+        <form style="text-align: center; margin-top: 2%;" action='/delete_tax_button' method="POST">
+            <div style="padding: 10px 0;">
+                <input style="background-color: #d3d1d1; padding: 10px 20px;" type="text" name="tid" placeholder="Enter Tax Id">
+            </div>
+            <button style="margin-top: 30px;" type="submit" value="Submit">Delete</button>
+        </form>
+    </div>
+{% endblock %}

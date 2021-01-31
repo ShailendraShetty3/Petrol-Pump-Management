@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<h1 style="color:red"><center>try</center></h1>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trying</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/nouislider/nouislider.min.css')}}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+
+    <div>
+
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="static/images/petrol.jpg" alt="image">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form" action="">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="form-input">
+                                    <label for="first_name" class="required">name</label>
+                                    <input type="text" name="name" id="name" />
+                                </div>
+                                <div class="form-input">
+                                    <label for="last_name" class="required">email</label>
+                                    <input type="text" name="email" id="email" />
+                                </div>
+                             </div>
+
+
+                                </div>
+
+
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        </div>
+
+
+                        <div class="form-submit">
+                            <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+
+                        </div>
+                    </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='vendor/nouislider/nouislider.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='vendor/wnumb/wNumb.js')}}"></script>
+    <script src="{{ url_for('static', filename='vendor/jquery-validation/dist/jquery.validate.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='vendor/jquery-validation/dist/additional-methods.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
